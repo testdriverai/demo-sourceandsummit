@@ -1,20 +1,20 @@
 version: 4.2.20
 session: 67e30e92454d7f7080ecc3c6
 steps:
-  - prompt: Sign in with email testdriver@sourceandsummit.com and password testdriver
+  - prompt: Sign in with email ${TD_TEST_USERNAME} and password ${TD_TEST_PASSWORD}
     commands:
       - command: hover-text
         text: Email
         description: email input field
         action: click
       - command: type
-        text: testdriver@sourceandsummit.com
+        text: ${TD_TEST_USERNAME}
       - command: hover-text
         text: Password
         description: password input field
         action: click
       - command: type
-        text: testdriver
+        text: ${TD_TEST_PASSWORD}
       - command: hover-text
         text: Log In
         description: log in button
