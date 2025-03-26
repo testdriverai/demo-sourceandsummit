@@ -1,0 +1,37 @@
+version: 4.2.20
+session: 67e30e92454d7f7080ecc3c6
+steps:
+  - prompt: Sign in with email testdriver@sourceandsummit.com and password testdriver
+    commands:
+      - command: hover-text
+        text: Email
+        description: email input field
+        action: click
+      - command: type
+        text: testdriver@sourceandsummit.com
+      - command: hover-text
+        text: Password
+        description: password input field
+        action: click
+      - command: type
+        text: testdriver
+      - command: hover-text
+        text: Log In
+        description: log in button
+        action: click
+  - prompt: if there is a change your password popup, click OK on it
+    commands:
+      - command: hover-text
+        text: OK
+        description: OK button on the change your password popup
+        action: click
+  - prompt: in the save password prompt click Save
+    commands:
+      - command: hover-text
+        text: Save
+        description: Save button in the save password prompt
+        action: click
+  - prompt: assert we are at the home screen
+    commands:
+      - command: assert
+        expect: the Home text is visible on the sidebar

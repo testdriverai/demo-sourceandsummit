@@ -1,0 +1,195 @@
+version: 4.2.20
+session: 67e352a5e166e87893ec1d2a
+steps:
+  - prompt: click the create button
+    commands:
+      - command: hover-text
+        text: Create Ordo
+        description: blue button to create a new Ordo
+        action: click
+  - prompt: >-
+      click search liturgies > other masses > votive masses > the most holy
+      trinity
+    commands:
+      - command: hover-text
+        text: Search liturgies
+        description: search input field in the Create Ordo form
+        action: click
+  - prompt: >-
+      click search liturgies > other masses > votive masses > the most holy
+      trinity
+    commands:
+      - command: hover-text
+        text: Other Masses
+        description: option under search liturgies
+        action: click
+      - command: hover-text
+        text: Votive Masses
+        description: option under other masses
+        action: click
+      - command: hover-text
+        text: The Most Holy Trinity
+        description: option under votive masses
+        action: click
+  - prompt: click the create ordo button
+    commands:
+      - command: hover-text
+        text: Create Ordo
+        description: button to create the ordo at the bottom of the form
+        action: click
+  - prompt: under Entrance Chant, click the open Blest be God the Father...
+    commands:
+      - command: hover-text
+        text: >-
+          Blest be God the Father, and the Only Begotten Son of God, and also
+          the Holy Spirit, for he has shown us his merciful love.
+        description: text under Entrance Chant
+        action: click
+  - prompt: click First Reading from the sidebar
+    commands:
+      - command: hover-text
+        text: First Reading
+        description: text in the sidebar under Outline
+        action: click
+      - command: hover-text
+        text: Moses spoke to the people
+        description: text under First Reading
+        action: click
+  - prompt: click Responsorial Psalm from the sidebar
+    commands:
+      - command: hover-text
+        text: Responsorial Psalm
+        description: text in the sidebar under Outline
+        action: click
+  - prompt: Under Responsorial Psalm click the option Priase the Lord, Jerusalem
+    commands:
+      - command: hover-text
+        text: Praise the Lord, Jerusalem
+        description: text under Responsorial Psalm
+        action: click
+  - prompt: in the sidebar click Verse Before the Gospel
+    commands:
+      - command: hover-text
+        text: Verse Before the Gospel
+        description: text in the sidebar under Outline
+        action: click
+  - prompt: under Verse before the gospel click the option Lord, you are truly...
+    commands:
+      - command: hover-text
+        text: >-
+          Lord, you are truly the Savior of the world; give me living water,
+          that I may never thirst again.
+        description: text under Verse Before the Gospel
+        action: click
+      - command: hover-text
+        text: Glory to you, O Word of God, Lord Jesus Christ.
+        description: option under Verse Before the Gospel
+        action: click
+  - prompt: click Gospel in the sidebar
+    commands:
+      - command: hover-text
+        text: Gospel
+        description: text in the sidebar under Outline
+        action: click
+  - prompt: under Gospel, click the option Jesus said to his disciples...
+    commands:
+      - command: hover-text
+        text: Jesus said to his disciples
+        description: option under Gospel section
+        action: click
+  - prompt: click Offertory Chant in the sidebar
+    commands:
+      - command: hover-text
+        text: Offertory Chant
+        description: text in the sidebar under Outline
+        action: click
+  - prompt: under Offerytory Chant, click add a hymn
+    commands:
+      - command: hover-text
+        text: Add a Hymn
+        description: button under Offertory Chant section
+        action: click
+  - prompt: click All Hymns in the right sidebar
+    commands:
+      - command: hover-text
+        text: All Hymns
+        description: text in the right sidebar under Browse By
+        action: click
+  - prompt: select the hymn, A Child is born in Bethlehem
+    commands:
+      - command: hover-text
+        text: A Child is Born in Bethlehem
+        description: hymn title in the right sidebar under All Hymns
+        action: click
+  - prompt: click Mystery of Faith in the sidebar
+    commands:
+      - command: hover-text
+        text: Mystery of Faith
+        description: text in the left sidebar under Outline
+        action: click
+  - prompt: under Mystery of Faith click the option We proclaim your Death...
+    commands:
+      - command: hover-text
+        text: >-
+          We proclaim your Death, O Lord, and profess your Resurrection until
+          you come again.
+        description: option under Mystery of Faith
+        action: click
+  - prompt: click Communion Chant in the sidebar
+    commands:
+      - command: hover-text
+        text: Communion Chant
+        description: text in the left sidebar under Outline
+        action: click
+  - prompt: under Communion Chant click the option Since you are children of God...
+    commands:
+      - command: hover-text
+        text: Since you are children of God
+        description: option under Communion Chant
+        action: click
+  - prompt: under Communion Chant click the option Bless the lord, o my soul...
+    commands:
+      - command: hover-text
+        text: Bless the lord, O my soul
+        description: option under Communion Chant
+        action: click
+  - prompt: click the Create Resource button
+    commands:
+      - command: hover-text
+        text: Create Resource
+        description: button at the bottom right of the screen
+        action: click
+  - prompt: click Full page in the popup
+    commands:
+      - command: hover-text
+        text: Full Page 8.5×11
+        description: option in the resource format dropdown
+        action: click
+  - prompt: click the downloads, then open the downloads folder in windows
+    commands:
+      - command: hover-text
+        text: Downloads
+        description: downloads icon in the Chrome toolbar
+        action: click
+      - command: press-keys
+        keys:
+          - control
+          - j
+      - command: hover-image
+        description: folder icon next to the most recent downloaded PDF
+        action: click
+  - prompt: open the pdf
+    commands:
+      - command: hover-text
+        text: Full Page, 8.5x11 – Untitled.pdf
+        description: the PDF file in the Downloads folder
+        action: double-click
+  - prompt: open the pdf
+    commands:
+      - command: hover-text
+        text: Microsoft Edge
+        description: option to open PDF with Microsoft Edge
+        action: click
+      - command: press-keys
+        keys:
+          - enter

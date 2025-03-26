@@ -1,0 +1,150 @@
+version: 4.2.20
+session: 67e36755e166e87893ec1dd3
+steps:
+  - prompt: click Entrance chant
+    commands:
+      - command: hover-text
+        text: Entrance Chant
+        description: text for entrance chant in the PDF document
+        action: click
+  - prompt: >-
+      assert that the text under Entrance Chant contains Blest be God the
+      Father...
+    commands:
+      - command: assert
+        expect: the text under Entrance Chant contains Blest be God the Father...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Kyrie and assert the text includes Lord, have mercy...
+    commands:
+      - command: hover-text
+        text: Kyrie
+        description: text for Kyrie in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Kyrie contains Lord, have mercy...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click First Reading and assert it has the text Moses spoke to the people...
+    commands:
+      - command: hover-text
+        text: First reading
+        description: text for First reading in the PDF document
+        action: click
+      - command: assert
+        expect: the text under First Reading contains Moses spoke to the people...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Responsorial Psalm and assert it has the text Glorify the Lord, O Jerusalem
+    commands:
+      - command: hover-text
+        text: Responsorial Psalm
+        description: text for Responsorial Psalm in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Responsorial contains Glorify the Lord, O Jerusalem...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Verse Before the Gospel and assert it has the text Lord, you are truly the Savior...
+    commands:
+      - command: hover-text
+        text: Verse Before the Gospel
+        description: text for Responsorial Psalm in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Verse Before the Gospel contains Lord, you are truly the Savior...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Gospel and assert it has the text Jesus said to his disciples...
+    commands:
+      - command: hover-text
+        text: Gospel
+        description: text for Gospel in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Gospel contains Jesus said to his disciples...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Offertory Chant and assert it has the text A Child is Born in Bethlehem followed by musical notation
+    commands:
+      - command: hover-text
+        text: Offertory Chant
+        description: text for Offertory chant in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Offertory Chant contains A Child is Born in Bethlehem followed by some musical notation
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Sanctus and assert it has the text Holy, Holy, Holy Lord God of hosts...
+    commands:
+      - command: hover-text
+        text: Sanctus
+        description: text for Sanctus in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Sanctus contains Holy, Holy, Holy Lord God of hosts...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Mystery of Faith and assert it has the text We proclaim your Death...
+    commands:
+      - command: hover-text
+        text: Mystery of Faith
+        description: text for Mystery of Faith in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Mystery of Faith contains We proclaim your Death...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Agnus Dei and assert it has the text Lamb of God...
+    commands:
+      - command: hover-text
+        text: Agnus Dei
+        description: text for Agnus Dei in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Agnus Dei contains Lamb of God...
+  - prompt: press the home key to go to the top of the pdf
+    commands:
+      - command: press-keys
+        keys:
+          - home
+  - prompt: click Communion Chant and assert it has the text Bless the Lord, O my soul...
+    commands:
+      - command: hover-text
+        text: Communion Chant
+        description: text for Communion Chant in the PDF document
+        action: click
+      - command: assert
+        expect: the text under Communion Chant contains Bless the Lord, O my soul
+        
+        
+        
+        
+
