@@ -19,12 +19,20 @@ steps:
         text: Log In
         description: log in button
         action: click
+  - prompt: wait 5 seconds
+    commands:
+      - command: wait
+        timeout: 5000
   - prompt: if there is a change your password popup, click OK on it
     commands:
       - command: hover-text
         text: OK
         description: OK button on the change your password popup
         action: click
+  - prompt: wait 5 seconds
+    commands:
+      - command: wait
+        timeout: 5000
   - prompt: in the save password prompt click Save
     commands:
       - command: hover-text
